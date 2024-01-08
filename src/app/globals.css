@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,27 +30,45 @@
     rgb(var(--background-start-rgb));
 } */
 
+:root {
+  --foreground-rgb-start: 38, 42, 77;
+  --foreground-rgb-middle: 112, 25, 57;
+  --foreground-rgb-end: 240, 162, 115;
+  --text-color: 255,255,255
+}
+
 /* custom-scales.css */
 @layer utilities {
   .scale-90 {
     transform: scale(0.90);
   }
 
-  .scale-150 {
-    transform: scale(1.5);
+  .scale-105 {
+    transform: scale(1.05);
+  }
+  .text-opacity-50 {
+    color: rgba(var(--text-color), 0.5)
   }
 
+  .text-opacity-70 {
+    color: rgba(var(--text-color), 0.7)
+  }
+
+  .text-opacity-80 {
+    color: rgba(var(--text-color), 0.8)
+  }
   /* Add more custom scales as needed */
+  .glass {
+    /* background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.1)); */
+    background: linear-gradient(155deg, rgba(var(--foreground-rgb-start), 0.1) 26%, rgba(var(--foreground-rgb-middle),0.1) 61%, rgba(var(--foreground-rgb-end), 0.1) 99%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.7);
+  }
 }
 
-
-:root {
-  --foreground-rgb-start: 38, 42, 77;
-  --foreground-rgb-middle: 112 25, 57;
-  --foreground-rgb-end: 240, 162, 115;
-}
 
 body {
-  color: rgb(255,255,255);
+  color: rgb(var(--text-color));
   background: linear-gradient(155deg, rgba(var(--foreground-rgb-start), 1) 26%, rgba(var(--foreground-rgb-middle),1) 61%, rgba(var(--foreground-rgb-end), 1) 99%);
 }
