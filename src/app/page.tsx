@@ -1,9 +1,12 @@
-import Image from 'next/image'
+import Hero from '@/app/Hero'
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className="p-4">
-      Home Page
+    <main className="p-4 grow md:flex md:justify-center md:items-center">
+      <Hero/>
     </main>
   )
 }
+
+
+export default Home;
