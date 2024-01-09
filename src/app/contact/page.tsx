@@ -15,7 +15,7 @@ const ContactPage = () => {
       <section className="mt-5">
         <EmailForm/>
       </section>
-      <section>
+      <section className="mt-5">
         <SocialMediaIcons/>
       </section>
     </main>
