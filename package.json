@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@types/react-icons": "^3.0.0",
-    "contentful": "^10.0.0",
+    "contentful": "^10.6.16",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
