@@ -6,10 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cf_export": "export $(cat .env.local | awk '!/^\\s*#/' | awk '!/^\\s*$/'); contentful space export --config src/lib/contentful/export-config.json --management-token $CONTENTFUL_MANAGEMENT_TOKEN --space-id $CONTENTFUL_SPACE_ID",
+    "cf_generate_types": "cf-content-types-generator src/lib/contentful/export.json --out src/lib/types/contentful",
+    "contentful-typegen-help": "cf-content-types-generator --help"
   },
   "dependencies": {
     "@types/react-icons": "^3.0.0",
+    "contentful": "^10.0.0",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
@@ -20,6 +24,8 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "cf-content-types-generator": "^2.13.1",
+    "contentful-cli": "^3.1.39",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
     "postcss": "^8",
