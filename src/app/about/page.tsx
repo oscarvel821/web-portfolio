@@ -9,7 +9,7 @@ const AboutPage = () => {
         <div className="flex flex-col font-Nunito md:w-1/2">
           <h1 className="text-5xl font-bold">Oscar Velazquez</h1>
           <h2 className="text-2xl my-2">Software Engineer</h2>
-          <h2 className="w-3/4 text-2xl my-2 font-RobotoFlex text-opacity-70">I build pixel-perfect, accessible products for the web and beyond.</h2>
+          <h2 className="w-3/4 text-2xl my-2 font-RobotoFlex text-opacity-70">Currently, my main focus is on Next.js and TypeScript development.</h2>
           {/* <ul>
             <li>About</li>
             <li>Education</li>
