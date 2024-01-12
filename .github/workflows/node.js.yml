@@ -32,5 +32,6 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build --if-present
+    - name: Change Directory
       run: cd /home/oscar/actions-runner/_work/web-portfolio/web-portfolio
     - run: pm2 restart 0
