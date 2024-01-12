@@ -22,8 +22,8 @@ const ProjectModal = ({children, show, handleClose} : props) => {
     return (
         <ReactPortal wrapperId="react-portal-modal-container">
             <>
-                <div className="fixed top-0 left-0  w-screen h-screen z-50 flex justify-center items-center bg-neutral-800/30">
-                    <div className="rounded flex flex-col box-border w-3/4 md:w-1/2 max-w-screen-md overflow-hidden p-5 glass">
+                <div className="fixed top-0 left-0 w-screen h-screen z-50 flex justify-center items-center bg-neutral-800/30">
+                    <div className="rounded flex flex-col box-border w-3/4 md:w-1/2 max-w-screen-md max-h-screen overflow-hidden p-5 glass">
                         <button className="self-end" onClick={handleClose}><IoMdClose size={35}/></button>
                         <div>
                             {children}

@@ -1,0 +1,721 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "hpke0z4t6okl"
+          }
+        },
+        "id": "project",
+        "type": "ContentType",
+        "createdAt": "2024-01-10T20:16:18.328Z",
+        "updatedAt": "2024-01-11T07:31:09.550Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2024-01-11T07:31:09.550Z",
+        "firstPublishedAt": "2024-01-10T20:16:18.723Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1XKhUqGZ27P0dP58x4R94J"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1XKhUqGZ27P0dP58x4R94J"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1XKhUqGZ27P0dP58x4R94J"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Project",
+      "description": "Software Engineer portfolio's projects",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "description",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "date",
+          "name": "date",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "hpke0z4t6okl",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 6,
+        "createdAt": "2024-01-10T20:16:18.808Z",
+        "createdBy": {
+          "sys": {
+            "id": "1XKhUqGZ27P0dP58x4R94J",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2024-01-11T07:31:10.024Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1XKhUqGZ27P0dP58x4R94J",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "project",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "date",
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "hpke0z4t6okl"
+          }
+        },
+        "id": "5tCbLy5wZpGb4N3u9VYYHj",
+        "type": "Entry",
+        "createdAt": "2024-01-10T20:25:04.379Z",
+        "updatedAt": "2024-01-10T20:30:26.801Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2024-01-10T20:30:26.801Z",
+        "firstPublishedAt": "2024-01-10T20:30:26.801Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1XKhUqGZ27P0dP58x4R94J"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1XKhUqGZ27P0dP58x4R94J"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1XKhUqGZ27P0dP58x4R94J"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Genetic Algorithm On Flappy Bird"
+        },
+        "description": {
+          "en-US": "This project centered around developing an AI for playing Flappy Bird using Python, Pygame, and NEAT (NeuroEvolution of Augmenting Topologies). The Pygame library simulated the game environment, while NEAT dynamically adjusted neural network structures through genetic algorithms.\n\nThe primary goal was to optimize the AI's performance and achieve a high score. The process involved iterative evolution of agents, employing selection, crossover, and mutation. The fitness function evaluated agent performance based on successful navigation, and higher-scoring agents were favored for the next generation.\n\nHyperparameter tuning fine-tuned mutation rates, population size, and neural network parameters, enhancing the genetic algorithm's efficiency. The project showcased improved AI performance across successive generations, demonstrating the effectiveness of genetic algorithms and NEAT in evolving intelligent agents for complex tasks like mastering Flappy Bird."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "hpke0z4t6okl"
+          }
+        },
+        "id": "2csMGYymum63cuQkjraSAm",
+        "type": "Entry",
+        "createdAt": "2024-01-10T20:35:30.803Z",
+        "updatedAt": "2024-01-10T20:36:21.393Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2024-01-10T20:36:21.393Z",
+        "firstPublishedAt": "2024-01-10T20:36:21.393Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1XKhUqGZ27P0dP58x4R94J"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1XKhUqGZ27P0dP58x4R94J"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1XKhUqGZ27P0dP58x4R94J"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Pathfinding Simulation"
+        },
+        "description": {
+          "en-US": "In this project, I set out to explore and compare the efficiency and speed of three pivotal pathfinding algorithms—Dijkstra's algorithm, A*, and breadth-first search (BFS). Harnessing the capabilities of Python and Pygame, I crafted an interactive and dynamic environment for simulating pathfinding scenarios. Pygame's visual representation allowed users to actively engage with the algorithms, setting start and destination points and gaining real-time insights into their navigation through obstacles.\n\nA key focus of the project was the evaluation of algorithmic performance using metrics such as computation time, path length, and resource utilization. The real-time visualizations provided not only a comparative analysis of each algorithm's strengths and weaknesses but also an intuitive understanding of their decision-making processes. This hands-on, visual approach aimed to enhance the educational value of the project, making it accessible for learners to comprehend the intricacies of these fundamental algorithms.\n\nEfficiency optimization played a pivotal role in the project's development. The Python implementation of the algorithms was fine-tuned for seamless performance, ensuring a smooth and responsive user experience. To further aid understanding and experimentation, the project included comprehensive documentation. This resource served as a guide for users, elucidating the intricacies of the code and empowering them to modify and extend it based on their unique learning goals. Overall, the project provided an insightful and educational exploration of pathfinding algorithms within a user-friendly Python and Pygame environment."
+        }
+      }
+    }
+  ],
+  "assets": [
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "21FAKUQ7jXMxkeIfLVdh16",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "hpke0z4t6okl"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "7ad7eab2-17ea-42e9-be82-60b7700e5b79"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1XKhUqGZ27P0dP58x4R94J"
+          }
+        },
+        "createdAt": "2024-01-10T20:10:44Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1XKhUqGZ27P0dP58x4R94J"
+          }
+        },
+        "updatedAt": "2024-01-10T20:10:44Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Author",
+      "description": "Allows editing of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "create"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "226k0BKoE3wq6uzWkzQmOc",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "hpke0z4t6okl"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1XKhUqGZ27P0dP58x4R94J"
+          }
+        },
+        "createdAt": "2024-01-10T20:10:45Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1XKhUqGZ27P0dP58x4R94J"
+          }
+        },
+        "updatedAt": "2024-01-10T20:10:45Z"
+      }
+    },
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "226Hzofr5ZYEFH5syqfVy8",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "hpke0z4t6okl"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1XKhUqGZ27P0dP58x4R94J"
+          }
+        },
+        "createdAt": "2024-01-10T20:10:45Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1XKhUqGZ27P0dP58x4R94J"
+          }
+        },
+        "updatedAt": "2024-01-10T20:10:45Z"
+      }
+    },
+    {
+      "name": "Translator",
+      "description": "Allows editing of localized fields in the specified language",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "read"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": [
+            "update"
+          ],
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              },
+              {
+                "paths": [
+                  {
+                    "doc": "fields.%.%"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "22758aKtxWqTeTAYMgFui4",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "hpke0z4t6okl"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1XKhUqGZ27P0dP58x4R94J"
+          }
+        },
+        "createdAt": "2024-01-10T20:10:45Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1XKhUqGZ27P0dP58x4R94J"
+          }
+        },
+        "updatedAt": "2024-01-10T20:10:45Z"
+      }
+    }
+  ]
+}
