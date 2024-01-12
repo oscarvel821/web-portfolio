@@ -18,7 +18,7 @@ const SocialMediaIcons = () => {
         {
             title : "Github",
             icon : <FaGithub className="text-[#636362] hover:text-[#4d4d4d] mx-3" size={40}/>,
-            path : "https://github.com/"
+            path : "https://github.com/oscarvel821"
         }
     ]
 
