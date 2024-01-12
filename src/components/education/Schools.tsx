@@ -35,8 +35,8 @@ const Schools = () => {
     return (
         <div>
             {schools.map((s, index) => (
-                <div className="flex font-RobotoFlex my-5">
-                    <div key={`school-${index}`} className="text-md text-opacity-80 w-1/5">
+                <div key={`school-${index}`}  className="flex font-RobotoFlex my-5">
+                    <div className="text-md text-opacity-80 w-1/5">
                         <p className="p-1">{`${s.start_year} - ${s.end_year}`}</p>
                     </div>
                     <div className="ms-5">
