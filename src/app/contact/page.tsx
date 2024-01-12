@@ -5,7 +5,10 @@ import SocialMediaIcons from "@/components/navbar/links/socialMediaIcons/SocialM
 const ContactPage = () => {
   return (
     <main className="p-4 grow">
-      <section className="font-RobotoFlex">
+      <section className="flex justify-center">
+        <h1 className="text-2xl font-RobotoFlex">Coming Soon</h1>
+      </section>
+      {/* <section className="font-RobotoFlex">
         <h1 className="text-4xl font-bold">Contact Me</h1>
         <div className="mt-5 flex items-center">
         <h3 className="me-2 text-2xl text-opacity-80">Feel Free To Shoot Me A Message</h3>
@@ -17,7 +20,7 @@ const ContactPage = () => {
       </section>
       <section className="mt-5">
         <SocialMediaIcons/>
-      </section>
+      </section> */}
     </main>
   )
 }
