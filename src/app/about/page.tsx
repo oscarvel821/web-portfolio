@@ -2,6 +2,7 @@ import SocialMediaIcons from "@/components/navbar/links/socialMediaIcons/SocialM
 import Schools from "@/components/education/Schools";
 import Skills from "@/components/skills/Skills";
 import { FaLongArrowAltRight } from "react-icons/fa"
+import Link from "next/link"
 
 const AboutPage = () => {
     return (
@@ -32,9 +33,11 @@ const AboutPage = () => {
           <section className="mt-5">
             <h2 className="text-4xl font-bold mb-2 font-RobotoFlex">Skills</h2>
             <Skills/>
-            <div className="mt-5 inline-flex items-center cursor-pointer hover:scale-105 transform transition-transform">
-              <span className="text-xl me-1">View Full Resume </span> 
-              <FaLongArrowAltRight size={40} />
+            <div className="mt-5 inline-flex cursor-pointer hover:scale-105 transform transition-transform">
+              <Link className='inline-flex items-center' href={"/resume_pdf"}>
+                <span className="text-xl me-1">View Full Resume </span> 
+                <FaLongArrowAltRight size={40} />
+              </Link>
             </div>
           </section>
         </div>
