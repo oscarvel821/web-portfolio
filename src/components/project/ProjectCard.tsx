@@ -36,7 +36,7 @@ const ProjectCard = ({img, title, text, url} : props) => {
                 <h4 className='text-xl text-opacity-70 my-2'>
                     {cropText(text, 150)}
                 </h4>
-                <button className="bg-[#F0A273] rounded-xl p-3  shadow hover:shadow-lg hover:bg-[#D18B4D] active:bg-[#B47634] my-2"><a href={url} target="_blank">Read More On Github</a></button>
+                <a className="inline-block bg-[#F0A273] rounded-xl p-3 shadow hover:shadow-lg hover:bg-[#D18B4D] active:bg-[#B47634] my-2" href={url} target="_blank">Read More On Github</a>
                 {/* <button onClick={() => setProjectModalShow(true)} className="bg-[#F0A273] rounded-xl p-3  shadow hover:shadow-lg hover:bg-[#D18B4D] active:bg-[#B47634] my-2">Read More</button> */}
             </div>
             {/* {projectModalShow && (
