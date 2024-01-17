@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 // import { PDFViewer, Document, View, Page, Text } from "@react-pdf/renderer";
 // import { useEffect, useState } from "react";
 // import { pdfjs } from "react-pdf";
@@ -29,7 +29,7 @@ const ResumePdf = () => {
                 <Page pageNumber={1}/>
             </Document> */}
                 {/* <iframe src=”” width=”100%” height=”500px” /> */}
-                <iframe className="" src="/resume.pdf" width="100%"/>
+                <iframe className="" src="/resume.pdf" width="100%" loading="lazy" title="Resume" allowFullScreen={true}/>
         </div>
     )
 }
