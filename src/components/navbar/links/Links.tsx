@@ -1,4 +1,5 @@
-import { FC, useEffect, useRef } from 'react'
+import { FC, useRef } from 'react'
+import { usePathname } from 'next/navigation';
 import Link from "next/link"
 
 interface link {
@@ -13,8 +14,13 @@ interface props {
 const Links : FC<props> = ({handleCollapse} : props) => {
 
     const linkRef = useRef<HTMLAnchorElement>(null);
+    const pathname = usePathname();
 
     const links: link[] = [
+        {
+            title : "Home",
+            path: "/"
+        },
         {
             title : "About",
             path : "/about"
@@ -25,15 +31,15 @@ const Links : FC<props> = ({handleCollapse} : props) => {
         },
         {
             title : "Contact",
-            path : "/contact"
+            path : "/contact",
         }
     ]
 
     return (
         <>
             {links.map((l, index) => (
-                <li key={index} className='text-xl my-2 md:text-2xl md:my-0'>
-                    <Link onClick={handleCollapse} className='hover:text-[#F0A273]' href={l.path} key={index}>{l.title}</Link>
+                <li key={index} className={`text-xl ${pathname === l.path ? "font-med md:text-2xl" : "font-light md:text-xl"} my-2  md:my-0`}>
+                    <Link onClick={handleCollapse} className={`rounded-3xl ${pathname === l.path ? "bg-[#212529]" : ""} p-4`} href={l.path} key={index}>{l.title}</Link>
                 </li>
             ))}
         </>
