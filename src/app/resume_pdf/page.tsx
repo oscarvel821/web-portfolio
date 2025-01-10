@@ -29,7 +29,7 @@ const ResumePdf = () => {
                 <Page pageNumber={1}/>
             </Document> */}
                 {/* <iframe src=”” width=”100%” height=”500px” /> */}
-                <iframe className="" src="/resume.pdf" width="100%" loading="lazy" title="Resume" allowFullScreen={true}/>
+                <iframe className="" src="/resume_V10.pdf" width="100%" loading="lazy" title="Resume" allowFullScreen={true}/>
         </div>
     )
 }
