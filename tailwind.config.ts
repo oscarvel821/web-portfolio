@@ -16,7 +16,8 @@ const config: Config = {
       fontFamily : {
         Roboto : ["Roboto", "sans-serif"],
         Nunito : ["Nunito", "sans-serif"],
-        RobotoFlex : ["Roboto Flex", "sans-serif"]
+        RobotoFlex : ["Roboto Flex", "sans-serif"],
+        RobotoSerif : ["Roboto Serif", "serif"]
       }
     },
   },

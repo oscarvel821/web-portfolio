@@ -1,11 +1,13 @@
-import type { Entry, EntryField, EntryFields } from "contentful";
+import type { Entry, EntryFields, Asset } from "contentful";
 
 export interface TypeProjectFields {
     contentTypeId : "project",
     fields : {
         title : EntryFields.Text,
         description : EntryFields.Text,
-        url : EntryFields.Text
+        url : EntryFields.Text,
+        project_image : Asset
+
     }
 }
 

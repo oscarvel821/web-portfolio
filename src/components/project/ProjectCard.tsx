@@ -1,10 +1,12 @@
-"use client"
+// "use client"
 import { useState } from "react";
 import ProjectModal from "./ProjectModal";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import Image from "next/image";
+import { ContentfulImage } from "@/lib/types/contentfulImage";
 
 interface props {
-    img : string;
+    img : ContentfulImage;
     title : string;
     text : string;
     url : string;
@@ -27,16 +29,17 @@ const ProjectCard = ({img, title, text, url} : props) => {
 
 
     return (
-        <div className='sm:max-w-full md:max-w-md lg:max-w-sm glass rounded-lg shadow outline outline-1 outline-slate-600/30'>
-            <img className="rounded-t-lg" src={img}/>
-            <div className='font-RobotoFlex p-2'>
-                <h3 className='text-2xl my-2'>
+        <div className='sm:max-w-full md:max-w-md lg:max-w-sm glass rounded-lg shadow outline outline-1 outline-gray-100/30'>
+            {/* <img className="rounded-t-lg" src={img}/> */}
+            <Image src={img.url} alt={img.alt} height={img.height} width={img.width} style={{ height : "300px", objectFit : 'contain'}}/>
+            <div className='p-2'>
+                <h3 className='text-xl my-2'>
                     {title}
                 </h3>
                 <h4 className='text-xl text-opacity-70 my-2'>
                     {cropText(text, 150)}
                 </h4>
-                <a className="inline-block bg-[#F0A273] rounded-xl p-3 shadow hover:shadow-lg hover:bg-[#D18B4D] active:bg-[#B47634] my-2" href={url} target="_blank">Read More On Github</a>
+                <a className="inline-block bg-[#575757] rounded-xl p-3 shadow hover:shadow-lg hover:bg-[#343434] active:bg-[#111111] my-2" href={url} target="_blank">Read More On Github</a>
                 {/* <button onClick={() => setProjectModalShow(true)} className="bg-[#F0A273] rounded-xl p-3  shadow hover:shadow-lg hover:bg-[#D18B4D] active:bg-[#B47634] my-2">Read More</button> */}
             </div>
             {/* {projectModalShow && (

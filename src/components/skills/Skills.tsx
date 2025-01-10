@@ -14,9 +14,9 @@ const Skills = () => {
     ]
 
     return (
-        <div className="text-[#A34D4E] mt-5 grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4">
+        <div className="text-[#696969] mt-5 grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4">
             {skills.map((s, index) => (
-                    <div key={`skill-${index}`} className="flex justify-center p-3 rounded-full bg-[#280A2E] outline outline-2 outline-[#A34D4E]">
+                    <div key={`skill-${index}`} className="flex justify-center p-3 rounded-full bg-[#111111] outline outline-2 outline-[#696969]">
                         {s}
                     </div>
             ))}
