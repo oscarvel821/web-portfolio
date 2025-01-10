@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -30,10 +32,12 @@
     rgb(var(--background-start-rgb));
 } */
 
+
+
 :root {
-  --foreground-rgb-start: 38, 42, 77;
-  --foreground-rgb-middle: 112, 25, 57;
-  --foreground-rgb-end: 240, 162, 115;
+  --foreground-rgb-start: 0, 0, 0;
+  --foreground-rgb-middle: 35, 35, 35;
+  --foreground-rgb-end: 70, 70, 70;
   --text-color: 255,255,255
 }
 
@@ -71,4 +75,5 @@
 body {
   color: rgb(var(--text-color));
   background: linear-gradient(155deg, rgba(var(--foreground-rgb-start), 1) 26%, rgba(var(--foreground-rgb-middle),1) 61%, rgba(var(--foreground-rgb-end), 1) 99%);
+
 }

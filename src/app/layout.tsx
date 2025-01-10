@@ -18,9 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <div className='w-full max-w-screen-xl mx-auto px-5 min-h-screen flex flex-col'>
-          <Navbar/>
-          {children}
+        <div className='relative w-full h-full'>
+          <div className='absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#d1d1d115_1px,transparent_1px),linear-gradient(to_bottom,#d1d1d115_1px,transparent_1px)] bg-[size:24px_24px] -z-50'></div>
+          <div className='w-full max-w-screen-xl mx-auto px-5 min-h-screen flex flex-col font-RobotoSerif'>
+            <Navbar/>
+            {children}
+          </div>
         </div>
       </body>
     </html>
