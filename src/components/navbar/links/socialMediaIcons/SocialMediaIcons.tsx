@@ -13,7 +13,7 @@ const SocialMediaIcons = () => {
         {
             title : "LinkedIn",
             icon : <FaLinkedin className="text-[#0a66c2] hover:text-[#084d99]" size={40}/>,
-            path : "https://www.linkedin.com/"
+            path : "https://linkedin.com/in/oscar-velazquez-310735236"
         },
         {
             title : "Github",
